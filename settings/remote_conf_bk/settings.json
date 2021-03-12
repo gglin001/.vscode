@@ -1,0 +1,174 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "explorer.confirmDelete": false,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "diffEditor.ignoreTrimWhitespace": false,
+    "explorer.confirmDragAndDrop": false,
+    "git.enableSmartCommit": false,
+    // "vs-kubernetes": {
+    //     "vs-kubernetes.kubectl-path": "/home/allen/.vs-kubernetes/tools/kubectl/kubectl",
+    //     "vs-kubernetes.minikube-path": "/home/allen/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+    //     "vs-kubernetes.helm-path": "/home/allen/.vs-kubernetes/tools/helm/linux-amd64/helm",
+    //     "vs-kubernetes.draft-path": "/home/allen/.vs-kubernetes/tools/draft/linux-amd64/draft"
+    // },
+    "workbench.activityBar.visible": true,
+    "terminal.integrated.rendererType": "dom",
+    "workbench.statusBar.feedback.visible": false,
+    "editor.minimap.enabled": true,
+    "workbench.sideBar.location": "left",
+    "C_Cpp.updateChannel": "Insiders",
+    "editor.suggestSelection": "first",
+    "git.autofetch": true,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "editor.largeFileOptimizations": false,
+    "[matlab]": {},
+    "files.trimTrailingWhitespace": true,
+    "git.confirmSync": false,
+    // "workbench.editor.enablePreview": false
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+    "explorer.sortOrder": "type",
+    "workbench.iconTheme": "vscode-icons",
+    "window.enableMenuBarMnemonics": false,
+    "window.menuBarVisibility": "toggle",
+    // "markdown-pdf.executablePath": "/usr/bin/google-chrome",
+    "markdown-pdf.executablePath": "/usr/bin/chromium-browser",
+    "breadcrumbs.enabled": true,
+    "editor.renderWhitespace": "none",
+    "files.hotExit": "off",
+    "explorer.incrementalNaming": "smart",
+    "workbench.colorTheme": "Solarized Dark",
+    "go.formatTool": "goimports",
+    // fonts
+    "window.zoomLevel": 0,
+    // "debug.console.fontSize": 16,
+    // "terminal.integrated.fontSize": 16,
+    // "editor.fontSize": 18,
+    // "[Log]": {
+    //     "editor.fontSize": 16,
+    // },
+    // fonts
+    // "[javascript]": {
+    //     "editor.defaultFormatter": "vscode.typescript-language-features"
+    // },
+    "translator.captureWord": false,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "latex-workshop.view.pdf.viewer": "tab",
+    "python.condaPath": "/home/allen/.miniconda3/bin/conda",
+    "python.formatting.autopep8Args": [
+        "--max-line-length=120",
+        "--ignore",
+        "E402"
+    ],
+    "python.linting.pycodestyleArgs": [
+        "--max-line-length=120"
+    ],
+    "python.disableInstallationCheck": true,
+    "python.jediMemoryLimit": -1,
+    // "latex-workshop.message.update.show": false,
+    // "clang-format.fallbackStyle": "Google",
+    // "kite.showWelcomeNotificationOnStartup": false,
+    "cmake.configureOnOpen": false,
+    "C_Cpp.clang_format_fallbackStyle": "LLVM",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "python.languageServer": "Pylance",
+    "gitlens.advanced.messages": {
+        "suppressFileNotUnderSourceControlWarning": true
+    },
+    "svg.preview.mode": "img",
+    "gitlens.views.compare.files.layout": "list",
+    // "ffi_navigator.pythonpath": "/home/allen/.miniconda3/envs/py36/bin/python",
+    "python.showStartPage": false,
+    "clangd.path": "/home/allen/.miniconda3/envs/py36/bin/clangd",
+    "clangd.trace": "/home/allen/clangd_vscode.json",
+    "extensions.ignoreRecommendations": true,
+    "workspaceCacheClean.autoReload": true,
+    "workspaceCacheClean.silent": true,
+    "julia.enableTelemetry": true,
+    "julia.executablePath": "/home/allen/Software/julia-1.5.2/bin/julia",
+    "jupyter.sendSelectionToInteractiveWindow": false,
+    "jupyter.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.hovers.enabled": false,
+    "python.defaultInterpreterPath": "/home/allen/.miniconda3/envs/py36/bin/python",
+    "debug.internalConsoleOptions": "openOnSessionStart",
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "githubIssues.queries": [
+        {
+            "label": "My Issues",
+            "query": "default"
+        },
+        {
+            "label": "Created Issues",
+            "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+        }
+    ],
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format-10",
+    "editor.minimap.maxColumn": 60,
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "python.diagnostics.sourceMapsEnabled": true,
+    "python.workspaceSymbols.enabled": true,
+    "github.gitAuthentication": false,
+    "C_Cpp.workspaceSymbols": "All",
+    "jupyter.debugJustMyCode": false,
+    "diffEditor.renderSideBySide": true,
+    "bsv.bzl.enabled": true,
+    "python.linting.enabled": false,
+    "terminal.integrated.shell.windows": "/bin/bash",
+    "python.formatting.autopep8Path": "/home/allen/.miniconda3/envs/py36/bin/autopep8",
+    // java
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-1.8",
+            "path": "/usr/lib/jvm/java-8-openjdk-amd64",
+            "sources": "/usr/lib/jvm/openjdk-8/src.zip",
+            "javadoc": "https://docs.oracle.com/javase/8/docs/api",
+            "default": false
+        },
+        {
+            "name": "JavaSE-11",
+            "path": "/usr/lib/jvm/java-11-openjdk-amd64",
+            "sources": "/usr/lib/jvm/openjdk-11/lib/src.zip",
+            "javadoc": "https://docs.oracle.com/javase/11/docs/api",
+            "default": true
+        },
+    ],
+    "java.home": "/usr/lib/jvm/java-11-openjdk-amd64",
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "-l 120",
+        "-S"
+    ],
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.showSlider": "always",
+    "editor.overviewRulerBorder": false,
+    "debug.allowBreakpointsEverywhere": true,
+    "C_Cpp.autoAddFileAssociations": false,
+    "remote.autoForwardPortsSource": "output",
+}
