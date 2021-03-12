@@ -1,0 +1,78 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python_Current",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/python:${env:PYTHONPATH}",
+            },
+            "justMyCode": false,
+            "presentation": {
+                "hidden": true,
+                "group": "",
+                "order": 1
+            },
+            "subProcess": true,
+            // not work
+            // "postDebugTask": "wait",
+        },
+        {
+            "name": "gdb_Attach",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "/data/songlin/.miniconda3/envs/py36/bin/python",
+            "processId": "${command:pickProcess}",
+            // "processId": "${input:python}",
+            // "processId": "${input:python1}",
+            "additionalSOLibSearchPath": "${workspaceFolder}/build",
+            "MIMode": "gdb",
+            "presentation": {
+                "hidden": false,
+                "group": "",
+                "order": 1
+            },
+            // not work
+            // "preLaunchTask": "wait",
+        },
+    ],
+    "compounds": [
+        {
+            "name": "compound",
+            "configurations": [
+                "Python_Current",
+                "gdb_Attach"
+            ],
+            "presentation": {
+                "hidden": false,
+                "group": "",
+                "order": 1
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "id": "python",
+            "type": "command",
+            "command": "extension.pickNativeProcess",
+        },
+        {
+            "id": "python1",
+            "type": "command",
+            // shellCommand is an extension
+            "command": "shellCommand.execute",
+            "args": {
+                // "command": "cat ${fileBasename}}",
+                // "command": "sleep 1 && pgrep -f -n ${file}",
+                "command": "pgrep -f -n ${fileBasename}",
+                // "cwd": "${workspaceFolder}"
+            }
+        }
+    ]
+}
