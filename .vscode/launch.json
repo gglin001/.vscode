@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python_Current",
+            "name": "py_current",
             "type": "python",
             "request": "launch",
             "program": "${file}",
@@ -15,22 +15,17 @@
             },
             "justMyCode": false,
             "presentation": {
-                "hidden": true,
+                "hidden": false,
                 "group": "",
                 "order": 1
             },
-            "subProcess": true,
-            // not work
-            // "postDebugTask": "wait",
         },
         {
-            "name": "gdb_Attach",
+            "name": "gdb_attach",
             "type": "cppdbg",
             "request": "attach",
             "program": "/data/songlin/.miniconda3/envs/py36/bin/python",
             "processId": "${command:pickProcess}",
-            // "processId": "${input:python}",
-            // "processId": "${input:python1}",
             "additionalSOLibSearchPath": "${workspaceFolder}/build",
             "MIMode": "gdb",
             "presentation": {
@@ -38,41 +33,13 @@
                 "group": "",
                 "order": 1
             },
-            // not work
-            // "preLaunchTask": "wait",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
         },
-    ],
-    "compounds": [
-        {
-            "name": "compound",
-            "configurations": [
-                "Python_Current",
-                "gdb_Attach"
-            ],
-            "presentation": {
-                "hidden": false,
-                "group": "",
-                "order": 1
-            }
-        }
-    ],
-    "inputs": [
-        {
-            "id": "python",
-            "type": "command",
-            "command": "extension.pickNativeProcess",
-        },
-        {
-            "id": "python1",
-            "type": "command",
-            // shellCommand is an extension
-            "command": "shellCommand.execute",
-            "args": {
-                // "command": "cat ${fileBasename}}",
-                // "command": "sleep 1 && pgrep -f -n ${file}",
-                "command": "pgrep -f -n ${fileBasename}",
-                // "cwd": "${workspaceFolder}"
-            }
-        }
     ]
 }
